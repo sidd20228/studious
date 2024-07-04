@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.header p {
+    margin: 10px 0 0;
+    color: #666;
+}
+
+.header .btn {
+    background: #28a745;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.header .btn:hover {
+    background: #218838;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.left-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left-panel iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.right-panel {
+    width: 500px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-left: 1px solid #dee2e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.timer {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#timer {
+    font-size: 24px;
+    color: #333;
+}
+
+.todo-list {
+    text-align: left;
+    width: 100%;
+}
+
+.todo-list h3 {
+    margin-bottom: 10px;
+}
+
+#todo-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-items li {
+    background: #e9ecef;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#todo-items li.completed {
+    text-decoration: line-through;
+    background: #d4edda;
+}
+
+#new-todo {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#add-todo {
+    width: 45px;
+    background: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#add-todo:hover {
+    background: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

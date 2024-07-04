@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="profile.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box animated fadeIn">
+            <div class="header">
+                <h2 id="welcomeMessage">Welcome, </h2>
+                <p id="dob">Date of Birth: </p>
+                <button id="logoutBtn" class="btn">Logout</button>
+            </div>
+            
+            <div class="content">
+                <div class="left-panel">
+                    <!-- Embed Amazon Music playlist -->
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1677663291&color=%230b7fb6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/jaskaran-singh-847899430" title="" target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/jaskaran-singh-847899430/sets/diljit-dosanjh-all-songs" title="" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+                </div>
+                <div class="right-panel">
+                    <div class="timer">
+                        <p>Time Elapsed:</p>
+                        <span id="timer">00:00:00</span>
+                    </div>
+                    <div class="todo-list">
+                        <h3>To-Do List</h3>
+                        <ul id="todo-items">
+                            <!-- To-do items will be appended here -->
+                        </ul>
+                        <input type="text" id="new-todo" placeholder="New task...">
+                        <button id="add-todo" class="btn">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
